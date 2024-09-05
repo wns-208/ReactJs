@@ -1,26 +1,15 @@
 import './App.css'
+import { Button } from './components/Button.jsx';
 
-let alunos = [
-  { nome: 'Savalo Horse', cursos: ["DS", "ADM"] },
-  { nome: 'Miranata Filoxina', cursos: ["ADM", "MA"]}
-];
+function exibirMensagem(){
+  alert('Parabéns, agora você é Corinthiano!');
+}
 
 function App() {
 
   return (
-    <>
-      {
-        alunos.map((element) => (
-          <div key={element.nome}>
-             { element.nome }
-             {
-               element.cursos.map((curso) => (
-                <h1 key={curso}> {curso} </h1>
-               ))
-             }
-          </div>
-        ))
-      }
+    <> 
+      <Button texto='Ver meu Time' mensagem={exibirMensagem} />
     </>
   )
 }
