@@ -1,17 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './components/header'
-import Body from './components/body' 
-import Footer from './components/footer' 
 
+
+import './App.css'
+
+
+let personagem = {
+  nome: 'batman',
+  poder: 'rico',
+  altura: '1.80',
+  peso: '46kg',
+  salario: '10000000'
+};
 function App() {
   return (
     <>
-    <Header />
-    <Body />
-    <Footer />
+    <h1>Nome: { personagem.nome }</h1>
+    <h1>Poder: { personagem.poder }</h1>
+    <h1>altura: { personagem.altura }</h1>
+    <h1>peso: { personagem.peso }</h1>
+    <h1>salario: { personagem.salario }</h1>
     </>
   )
 }
